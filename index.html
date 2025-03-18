@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Busca de $600.000</title>
+    <link rel="Icon" type="png" href="https://abelcraftok.github.io/en-busca-de-600000/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .text-mini {
+            font-size: 12px;
+            
+            font-weight: bold;
+            color: #000;    
+        }
+        .precio {
+            font-size: 17px;
+            font-weight: bold;
+            color: limegreen;
+            text-align: left;
+        }
+        .container {
+            flex: 1;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .task-box {
+            border: 2px solid #000;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        .recuadro {
+            border: 2px solid black;
+            background-color: #c3c3c3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            width: 300px; /* Puedes ajustar el tamaño */
+        }
+        .recuadro:focus {
+            outline: none;
+            border-color: #333;
+        }
 
+        .task-box h2 {
+            margin-bottom: 10px;
+        }
+        .separator {
+            border-top: 2px solid #000;
+            margin: 10px 0;
+        }
+        .button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-primary { background-color: #007bff; color: white; }
+        .button-secondary { background-color: #28a745; color: white; }
+        .button-triniti { background-color: #fb33e9; color: white;}
+        .input-fecha {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .footer, .header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inicio" class="container">
+        <img src="https://abelcraftok.github.io/en-busca-de-600000/logo.png" width="190" height="190" alt="Logo">
+        <h1>Bienvenido a mi Emprendimiento<h1>
+        <h1>De llegar a los $600.000</h1>
+        <div class="separator"></div>
+        <div class="task-box">
+            <h2>¿Para que Estoy haciendo Esto?</h2>
+            <p>Lo que estoy haciendo es buscar varias formas de conseguir dinero, para poder comprarme una PC de buena calidad para poder usar varios programas a la vez, que no se me tilde cuando estoy en alguna aplicacion pesada, etc.</p>
+            <p>Si me queres ayudar podes colaborarme en:</p>
+            <p>- Hacerme pedidos de:</p>
+            <p>- Diseños Graficos</p>
+            <p>- Resumenes</p>
+            <p>- Tareas o Cuadros Sinopticos</p>
+            <p>- Sitios Webs o codigo de .html</p>
+            <p>- Comprandome una de mis cosas que tengo a la venta</p>
+            <button class="button button-primary" onclick="mostrarPestaña('list-servicios')">Ver Servicios</button>
+        </div>
+    </div>
+
+    <!-- Pestaña Lista de Servicios -->
+     <div id="list-servicios" class="container" style="display: none;">
+        <h1>Lista de Servicios</h1>
+        <div class="task-box">
+            <h2>Pedidos:</h2>
+            <p>Los pedidos se haran atravez de WhatsApp. Para hacer un pedido o ver los precios use el siguiente boton...</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Menu%20de%20Pedidos%20Disponibles')">Hacer Pedido</button>
+        </div>
+        <div class="task-box">
+            <h2>Productos en Venta:</h2>
+            <p>Te voy diciendo que algunos productos son viejos pero todo lo que estoy vendiendo es completamente funcional, algunas cosas son viejas y otras son bastante nuevas. Usa el siguiente boton para ver la lista de productos...</p>
+            <button class="button button-primary" onclick="mostrarPestaña('list-productos')">Ver Productos</button>
+        </div>
+    </div>
+
+    <!-- Pestaña Lista de Productos -->
+     <div id="list-productos" class="container" style="display: none;">
+        <h1>Lista de Productos</h1>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto1.jpeg" width="200" height="200" alt="Producto 1">
+            <h2>Perfume de Mujer - Marca: "ELIGE":</h2>
+            <p class="precio">$5.600</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Perfume%20de%20Mujer%20$5.600')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto2.jpeg" width="200" height="200" alt="Producto 2">
+            <h2>Camioneta HotWheels (estado: bueno):</h2>
+            <p class="precio">$1.100</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Camioneta%20HotWheels%20$1.100')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto3.jpeg" width="200" height="200" alt="Producto 3">
+            <h2>Auto de Juguete (estado: Medio/Malo):</h2>
+            <p class="precio">$600</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Auto%20de%20Juguete%20Aluminio%20$600')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto4.jpeg" width="200" height="200" alt="Producto 4">
+            <h2>Auto de Juguete (estado: Bueno + Grafiti):</h2>
+            <p class="precio">$300</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Autos%20de%20Juguete%20$300')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto5.jpeg" width="200" height="200" alt="Producto 5">
+            <h2>Marcador Filgo (estado: Muy Bueno):</h2>
+            <p class="precio">$2.000</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Marcador%20Filgo%20$2.000')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto6.jpeg" width="200" height="200" alt="Producto 6">
+            <h2>Tanque de Guerra (piñata):</h2>
+            <p class="precio">$100</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Tanque%20para%20piñata%20$100')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto7.jpeg" width="200" height="200" alt="Producto 7">
+            <h2>Anillo de Plata (estado: Bueno):</h2>
+            <p class="precio">$2.500</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Anillo%20de%20Plata%20$2.500')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto8.jpeg" width="200" height="200" alt="Producto 8">
+            <h2>Sierre de Dientes (estado: Muy bueno)</h2>
+            <p class="precio">$1.000</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Sierre%20$1.000')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto9.jpeg" width="200" height="200" alt="Producto 9">
+            <h2>Cable de Cargador (ficha: mini usb)</h2>
+            <p class="precio">$2.100</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Cble%20de%20Cargador%20$2.100')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto10.jpeg" width="200" height="200" alt="Producto 10">
+            <h2>Tarjeta para Jugar (no sirven)</h2>
+            <p class="precio">$700</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Tarjeta%20$700')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto11.jpeg" width="200" height="200" alt="Producto 11">
+            <h2>Dije de San Lorenzo de Almagro</h2>
+            <p class="precio">$650</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Dije%20de%20San%20Lorenzo%20$650')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto12.jpeg" width="200" height="200" alt="Producto 12">
+            <h2>Llave de Auto Ford (encontrada)</h2>
+            <p class="precio">$900</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Llave%20de%20Ford%20$900')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto13.jpeg" width="200" height="200" alt="Producto 13">
+            <h2>Pulceras de Luz (ya usadas)</h2>
+            <p class="precio">$150</p>
+            <button class="button button-primary" onclick="window.open('https://wa.me/542215989210?text=Pulceras%20$150')">Contactar por el Producto</button>
+        </div>
+        <div class="task-box">
+            <img src="https://abelcraftok.github.io/en-busca-de-600000/producto14.jpeg" width="200" height="200" alt="Producto 14">
+            <h2>Cartas de Matematicas Fracciones (Con Caja incluida)</h2>
+            <p class="precio">$3.500</p>
+            <button class="button button-secondary" onclick="window.open('https://wa.me/542215989210?text=Cartas%20de%20Matematicas%20$3.500')">Contactar por el Producto</button>
+    </div>
+
+    <!-- Pie de página inferior actualizado -->
+    <div id="1pie" class="footer">
+        <h2>Forma de contacto:</h2>
+        <a href="https://wa.me/+542215989210" target="_blank">
+            <button class="button button-secondary">Número de Teléfono</button>
+        </a>
+        <p class="text-mini">Version: 0.1</p>
+    </div>
+
+    <script> 
+        function mostrarPestaña(id) {
+        // Oculta todas las pestañas
+            document.querySelectorAll('.container').forEach(div => {
+            div.style.display = 'none';
+        });
+    
+        // Muestra la pestaña seleccionada
+        document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
