@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños Graficos - LoDePedro</title>
+    <link rel="Icon" type="png" href="https://abelcraftok.github.io/d-ldp/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .text-mini {
+            font-size: 12px;
+            
+            font-weight: bold;
+            color: #000;    
+        }
+        .precio {
+            font-size: 22px;
+            font-weight: bold;
+            color: limegreen;
+        }
+        .container {
+            flex: 1;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .task-box {
+            border: 2px solid #000;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        .recuadro {
+            border: 2px solid black;
+            background-color: #c3c3c3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            width: 300px; /* Puedes ajustar el tamaño */
+        }
+        .recuadro:focus {
+            outline: none;
+            border-color: #333;
+        }
+
+        .task-box h2 {
+            margin-bottom: 10px;
+        }
+        .separator {
+            border-top: 2px solid #000;
+            margin: 10px 0;
+        }
+        .button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-primary { background-color: #007bff; color: white; }
+        .button-secondary { background-color: #28a745; color: white; }
+        .button-triniti { background-color: #ff4ddd; color: white;}
+        .input-fecha {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .footer, .header {
+            background-color: #f8f9fa;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inicio" class="container">
+        <img src="https://abelcraftok.github.io/d-ldp/logo.png" width="190" height="190" alt="Logo">
+        <h1>Diseños Graficos</h1>
+        <h2>LoDePedro Bs As</h2>
+        <div class="task-box">
+            <h3>¡Hace tu pedido YA!</h3>
+            <div class="separator"></div>
+            <p>Selecciona el tipo de diseño que deseas:</p>
+            <p><button class="button button-triniti" onclick="mostrarPestaña('1')">1- Diseño Grafico</button></p>
+            <p><button class="button button-triniti" onclick="mostrarPestaña('2')">2- Resumenes</button></p>
+            <p><button class="button button-triniti" onclick="mostrarPestaña('3')">3- Tareas o Cuadros Sinopticos</button></p>
+            <p><button class="button button-triniti" onclick="mostrarPestaña('4')">4- Sitios Webs o codigo de .html</button></p>
+        </div>
+    </div>
+
+    <!-- Pestaña 1 -->
+     <div id="1" class="container" style="display: none;">
+        <img src="https://abelcraftok.github.io/d-ldp/logo.png" width="190" height="190" alt="Logo">
+        <div class="task-box">
+            <p>¿Que Tipo de Diseño Quieres?</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=1.a.')">1.a. Invitacion de Cumpleaños</button> $400</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=1.b.')">1.b. Invitacion a Eventos</button> $450</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=1.c.')">1.c. Folleto</button> $390</p>
+        </div>
+    </div>
+
+    <!-- Pestaña 2 -->
+     <div id="2" class="container" style="display: none;">
+        <img src="https://abelcraftok.github.io/d-ldp/logo.png" width="190" height="190" alt="Logo">
+        <div class="task-box">
+            <p>¿De que Materia Quieres que sea el Resumen?</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=2.a.')">2.a. Resumen de Historia - Cada Pagina:</button>$1.200</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=2.b.')">2.b. Resumen de Matemáticas - Cada Pagina:</button>$800</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=2.c.')">2.c. Resumen de Ciencias Naturales - Cada Pagina:</button>$800</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=2.d.')">2.d. Resumen de Quimica - Cada Pagina:</button>$1.200</p>
+        </div>
+    </div>
+
+    <!-- Pestaña 3 -->
+     <div id="3" class="container" style="display: none;">
+        <img src="https://abelcraftok.github.io/d-ldp/logo.png" width="190" height="190" alt="Logo">
+        <div class="task-box">
+            <p>¿De que Materia Quieres la Tarea o el Cuadro Sinoptico?</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=3.a.')">3.a. Tarea de Historia - Cada Pagina:</button>$400</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=3.b.')">3.b. Tarea de Matemáticas - Cada Pagina:</button>$400</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=3.c.')">3.c. Tarea de Ciencias Naturales - Cada Pagina:</button>$400</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=3.d.')">3.d. Tarea de Quimica - Cada Pagina:</button>$400</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=3.e.')">3.e. Cuadro Sinoptico - Cada Pagina:</button>$350</p>
+        </div>
+    </div>
+
+    <!-- Pestaña 4 -->
+     <div id="4" class="container" style="display: none;">
+        <img src="https://abelcraftok.github.io/d-ldp/logo.png" width="190" height="190" alt="Logo">
+        <div class="task-box">
+            <p>¿Que Tipo de Sitio Web o Codigo de .html Quieres?</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=4.a.')">4.a. Sitio Web - Cada 100 Lineas:</button>$800</p>
+            <p class="precio"><button class="button button-triniti" onclick="window.open('https://wa.me/542215989210?text=4.b.')">4.b. Codigo de .html - Cada 100 Lineas:</button>$1.400</p>
+        </div>
+    </div>
+
+    <!-- Pie de página inferior actualizado -->
+    <div id="1pie" class="footer">
+        <h2>Forma de contacto:</h2>
+        <a href="https://wa.me/+542215989210" target="_blank">
+            <button class="button button-secondary">Número de Teléfono</button>
+        </a>
+        <p class="text-mini">Version: 0.2</p>
+    </div>
+
+    <script> 
+        function mostrarPestaña(id) {
+        // Oculta todas las pestañas
+            document.querySelectorAll('.container').forEach(div => {
+            div.style.display = 'none';
+        });
+    
+        // Muestra la pestaña seleccionada
+        document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
